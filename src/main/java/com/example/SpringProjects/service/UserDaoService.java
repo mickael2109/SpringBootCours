@@ -7,6 +7,10 @@ import com.example.SpringProjects.model.User;
 public class UserDaoService {
     private static List<User> users = new ArrayList<>();
 
+    public UserDaoService(){
+        super();
+    }
+    
     static {
         users.add(new User(1, "Bruno", new Date()));
         users.add(new User(2, "Micka", new Date()));

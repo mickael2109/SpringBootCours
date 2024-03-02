@@ -4,13 +4,15 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.SpringProjects.service.UserDaoService;
 import com.example.SpringProjects.model.User;
 
+@RestController
 public class UserRessource {
     
-    private UserDaoService service;
+    private UserDaoService service = new UserDaoService();
 
 
     @GetMapping(path="/users")
